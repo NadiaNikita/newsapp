@@ -100,7 +100,7 @@ app.post("/articles/:id", function(req, res) {
     }
   });
 });
-//delete is not working
+
 app.delete("/delete/:id", function (req, res) {
   var id = req.params.id.toString();
   Note.remove({
